@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+} 
+
+@layer base {
+    h1 {
+        @apply mb-2 text-3xl font-bold;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        @apply text-slate-800
+    }
+
+    span, p{
+        @apply text-slate-900
+
+    }
+
+    /* ESTILOS PARA TIPOGRAFIAS */
+
+    .title-1 {
+        @apply md:text-5xl sm:text-4xl font-bold md:mb-12 sm:mb-8
+    }
+
+    .title-2 {
+        @apply text-3xl md:text-4xl  font-bold md:mb-10 sm:mb-8
+    }
+
+    .subtitle-1{
+        @apply md:text-3xl sm:text-2xl font-bold md:mb-8 sm:mb-6
+    }
+
+    .subtitle-2{
+        @apply md:text-2xl sm:text-xl font-bold md:mb-6 sm:mb-4
+    }
+
+    .text-normal {
+        @apply text-base tracking-normal
+    }
+
+    .text-small {
+        @apply md:text-sm sm:text-xs
+    }
+
+    .text-extra-small {
+        @apply md:text-xs sm:text-xs
+    }
+
+    .text-jumbo {
+        @apply md:text-9xl sm:text-5xl font-bold md:mb-8 sm:mb-5
+    }
+
+    /* ESTILOS PARA ESPACIADOS */
+    /* espacio vertical entre secciones  */
+    .space-sections {
+        @apply  mt-10 mb-10 md:mt-14 md:mb-14 
+    }
+}
